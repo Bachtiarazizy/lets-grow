@@ -1,0 +1,68 @@
+// ShiftingCountdown.module.scss
+
+.bg-gradient {
+  background: linear-gradient(to bottom right, #6d28d9, #4f46e5);
+  padding: 1rem; // Equivalent to p-4
+}
+.h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  max-width: 80rem; // max-w-5xl
+  align-items: center;
+  background-color: #ffffff;
+  margin: 0 auto; // mx-auto
+}
+
+.countdownItem {
+  display: flex;
+  height: 6rem; // h-24
+  width: 25%; // w-1/4
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem; // gap-1
+  border-right: 1px solid #e5e7eb; // border-r border-slate-200
+  font-family: "Courier New", Courier, monospace; // font-mono
+
+  &.large {
+    height: 9rem; // md:h-36
+    gap: 0.5rem; // md:gap-2
+  }
+}
+
+.countdownText {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2rem; // text-2xl
+  color: #000000;
+
+  &.large {
+    font-size: 4rem; // md:text-4xl
+    @media (min-width: 768px) {
+      font-size: 6rem; // lg:text-6xl
+    }
+    @media (min-width: 1024px) {
+      font-size: 7rem; // xl:text-7xl
+    }
+  }
+}
+
+.unitText {
+  font-size: 0.75rem; // text-xs
+  font-weight: 300; // font-light
+  color: #6b7280; // text-slate-500
+
+  &.large {
+    font-size: 0.875rem; // text-sm
+    @media (min-width: 768px) {
+      font-size: 1rem; // lg:text-base
+    }
+  }
+}

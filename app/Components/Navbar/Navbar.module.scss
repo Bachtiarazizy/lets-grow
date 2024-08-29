@@ -1,0 +1,31 @@
+$color-border: #ba8c8c;
+
+.nav {
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid $color-border;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  background-color: white;
+  z-index: 100;
+  width: 100%;
+  top: 0;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    li {
+      transition: all 0.2s ease-in-out;
+      color: black;
+
+      &:hover {
+        color: rgb(204, 255, 0);
+        transform: scale(1.1);
+      }
+    }
+  }
+}

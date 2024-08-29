@@ -1,0 +1,15 @@
+.neumorphismButton {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  color: #64748b; /* text-slate-500 */
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.8), 5px 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: -1px -1px 5px rgba(255, 255, 255, 0.6), 1px 1px 5px rgba(0, 0, 0, 0.3), inset -2px -2px 5px rgba(255, 255, 255, 1), inset 2px 2px 4px rgba(0, 0, 0, 0.3);
+    color: #7c3aed; /* text-violet-500 */
+  }
+}

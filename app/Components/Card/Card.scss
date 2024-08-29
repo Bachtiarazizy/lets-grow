@@ -1,0 +1,75 @@
+// Card.scss
+
+$color-bg: #18181b; // Replace with your background color variable
+$color-border: #2d2d2d; // Replace with your border color variable
+
+.card {
+  position: relative;
+  height: 400px; // Sesuaikan nilai ini untuk mengatur tinggi kartu
+  padding: 1rem; // Kurangi padding jika diperlukan
+  border-radius: 8px;
+  // border: 1px solid $color-border;
+  transition: all 0.3s ease-in-out;
+
+  .image {
+    height: 100%; // Sesuaikan tinggi gambar agar sesuai dengan tinggi kartu yang baru
+    width: 100%;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 8px;
+    }
+  }
+
+  .new {
+    position: absolute;
+    top: 1rem; // Sesuaikan posisi jika diperlukan
+    right: 1rem; // Sesuaikan posisi jika diperlukan
+    z-index: 5;
+    background: #222260;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem; // Sesuaikan ukuran font jika diperlukan
+  }
+
+  .text {
+    position: absolute;
+    bottom: 1rem; // Sesuaikan posisi teks agar sesuai dengan tinggi kartu
+    left: 1rem; // Sesuaikan posisi teks agar sesuai dengan tinggi kartu
+    z-index: 5;
+
+    h3 {
+      display: inline-block;
+      font-size: 1.2rem; // Sesuaikan ukuran font jika diperlukan
+      color: #f2994a;
+      background: $color-bg;
+      padding: 0.2rem 0.8rem; // Sesuaikan padding jika diperlukan
+      border-radius: 30px;
+      margin-bottom: 0.5rem;
+      border: 1px solid $color-border;
+    }
+
+    p {
+      color: #000000;
+      margin: 0;
+      font-size: 0.9rem; // Sesuaikan ukuran font jika diperlukan
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: 30%; // Sesuaikan tinggi overlay jika diperlukan
+    background: linear-gradient(0deg, #ffffff 1%, rgba(255, 247, 247, 0.06) 99%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+}

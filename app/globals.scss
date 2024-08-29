@@ -1,0 +1,48 @@
+// Variables
+$color-border: #424242;
+$color-bg: #ffffff;
+$font-size: 1.2rem;
+$text-color: hsla(0, 0%, 0%, 0.9);
+$accent-color: #d4d4d8;
+$border-color: #3f3f46;
+$background-color: #18181b;
+
+// Mixins
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Reset and global styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  position: relative;
+  background-color: $color-bg;
+  font-size: $font-size;
+  color: $text-color;
+  overflow-x: hidden;
+}
+
+input,
+button,
+a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+}
+
+section,
+header {
+  position: relative;
+  z-index: 10;
+}

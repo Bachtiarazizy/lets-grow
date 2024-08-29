@@ -1,0 +1,20 @@
+.fullpage {
+  .image {
+    width: calc(100% - 10rem);
+    height: 1000px;
+    position: relative;
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+    transition: border 0.3s ease-in-out;
+
+    img {
+      padding: 1.5rem;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &:hover {
+      border: 1px solid #f2994a;
+    }
+  }
+}
