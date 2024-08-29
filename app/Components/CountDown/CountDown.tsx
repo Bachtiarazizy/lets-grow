@@ -1,6 +1,6 @@
 import { useAnimate } from "framer-motion";
 import { useEffect, useRef, useState, useCallback } from "react";
-import styles from "./Countdown.module.scss"; // Import the Sass file
+import styles from "./CountDown.module.scss"; // Import the Sass file
 
 const COUNTDOWN_FROM = "2024-12-14";
 
