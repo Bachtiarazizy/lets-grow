@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./SectionLayout.module.scss";
 
 interface SectionLayoutProps {
   children: React.ReactNode;
@@ -7,11 +8,7 @@ interface SectionLayoutProps {
 
 function SectionLayout({ children, ref }: SectionLayoutProps) {
   return (
-    <section
-      style={{
-        padding: "5rem 5rem",
-      }}
-    >
+    <section className={styles.section} ref={ref}>
       {children}
     </section>
   );

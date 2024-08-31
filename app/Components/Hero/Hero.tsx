@@ -3,16 +3,19 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./Hero.module.scss";
 import { squareData } from "../../utils/squareData";
 import Button from "../Button/Button";
+import SparklesText from "../SparklesText/SparklesText";
 
 const ShuffleHero = () => {
   return (
     <section className={styles.section}>
       <div>
         <span className={styles.header}>Shine Brighter Every Day</span>
-        <h3 className={styles.title}>
-          Lets Grow,
-          <br /> Lets it Flow
-        </h3>
+        <SparklesText
+          text="Let's Grow, Let it Glow" // Change this to whatever text you want
+          colors={{ first: "#9E7AFF", second: "#FE8BBB" }}
+          className="text"
+          sparklesCount={15} // Adjust the number of sparkles if needed
+        />
         <p className={styles.description}>Unlock your potential and let your business flourish. Together, we’ll take your ideas to the next level. Join us on this journey of growth and success!</p>
         <Button />
       </div>

@@ -1,18 +1,22 @@
-// Card.scss
-
 $color-bg: #18181b; // Replace with your background color variable
 $color-border: #2d2d2d; // Replace with your border color variable
 
 .card {
   position: relative;
-  height: 400px; // Sesuaikan nilai ini untuk mengatur tinggi kartu
-  padding: 1rem; // Kurangi padding jika diperlukan
+
+  height: 100%; // Adjust this value to set the card's height
+  padding: 1rem; // Reduce padding if needed
   border-radius: 8px;
-  // border: 1px solid $color-border;
   transition: all 0.3s ease-in-out;
+  overflow: hidden; // Ensure content doesn't spill out on hover
+
+  &:hover {
+    transform: scale(1.05); // Slightly scale up the card on hover
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); // Add a shadow for depth
+  }
 
   .image {
-    height: 100%; // Sesuaikan tinggi gambar agar sesuai dengan tinggi kartu yang baru
+    height: 100%; // Adjust the image height to match the new card height
     width: 100%;
     position: relative;
 
@@ -22,34 +26,45 @@ $color-border: #2d2d2d; // Replace with your border color variable
       object-fit: cover;
       object-position: center;
       border-radius: 8px;
+      transition: all 0.3s ease-in-out;
+
+      .card:hover & {
+        filter: brightness(0.9); // Slightly darken the image on hover
+      }
     }
   }
 
   .new {
     position: absolute;
-    top: 1rem; // Sesuaikan posisi jika diperlukan
-    right: 1rem; // Sesuaikan posisi jika diperlukan
+    top: 1rem; // Adjust positioning if needed
+    right: 1rem; // Adjust positioning if needed
     z-index: 5;
     background: #222260;
     color: #fff;
     padding: 0.2rem 0.5rem;
     border-radius: 8px;
     font-weight: 600;
-    font-size: 0.9rem; // Sesuaikan ukuran font jika diperlukan
+    font-size: 0.9rem; // Adjust font size if needed
+    transition: background 0.3s ease-in-out;
+
+    .card:hover & {
+      background: #3a3aa0; // Change background color on hover
+    }
   }
 
   .text {
     position: absolute;
-    bottom: 1rem; // Sesuaikan posisi teks agar sesuai dengan tinggi kartu
-    left: 1rem; // Sesuaikan posisi teks agar sesuai dengan tinggi kartu
+    bottom: 1rem; // Adjust text positioning to match the new card height
+    left: 1rem; // Adjust text positioning to match the new card height
     z-index: 5;
+    transition: color 0.3s ease-in-out;
 
     h3 {
       display: inline-block;
-      font-size: 1.2rem; // Sesuaikan ukuran font jika diperlukan
+      font-size: 1.2rem; // Adjust font size if needed
       color: #f2994a;
       background: $color-bg;
-      padding: 0.2rem 0.8rem; // Sesuaikan padding jika diperlukan
+      padding: 0.2rem 0.8rem; // Adjust padding if needed
       border-radius: 30px;
       margin-bottom: 0.5rem;
       border: 1px solid $color-border;
@@ -58,7 +73,7 @@ $color-border: #2d2d2d; // Replace with your border color variable
     p {
       color: #000000;
       margin: 0;
-      font-size: 0.9rem; // Sesuaikan ukuran font jika diperlukan
+      font-size: 0.9rem; // Adjust font size if needed
     }
   }
 
@@ -67,9 +82,67 @@ $color-border: #2d2d2d; // Replace with your border color variable
     bottom: -2px;
     left: -2px;
     width: calc(100% + 4px);
-    height: 30%; // Sesuaikan tinggi overlay jika diperlukan
+    height: 30%; // Adjust overlay height if needed
     background: linear-gradient(0deg, #ffffff 1%, rgba(255, 247, 247, 0.06) 99%);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    transition: background 0.3s ease-in-out;
+
+    .card:hover & {
+      background: linear-gradient(0deg, #ffffff 20%, rgba(255, 247, 247, 0.2) 99%); // Make the overlay slightly more opaque on hover
+    }
+  }
+
+  // Responsive Styles
+  @media (max-width: 768px) {
+    .text {
+      bottom: 0.8rem; // Adjust text positioning for medium devices
+      left: 0.8rem;
+
+      h3 {
+        font-size: 1rem; // Reduce font size for medium devices
+        padding: 0.2rem 0.6rem; // Adjust padding for medium devices
+      }
+
+      p {
+        font-size: 0.8rem; // Reduce font size for medium devices
+      }
+    }
+
+    .new {
+      top: 0.8rem; // Adjust badge position for medium devices
+      right: 0.8rem;
+      font-size: 0.8rem; // Adjust font size for medium devices
+    }
+
+    .overlay {
+      height: 25%; // Reduce overlay height for medium devices
+    }
+  }
+
+  @media (max-width: 480px) {
+    F .text {
+      bottom: 0.5rem; // Adjust text positioning for small devices
+      left: 0.5rem;
+
+      h3 {
+        font-size: 0.9rem; // Further reduce font size for small devices
+        padding: 0.1rem 0.5rem; // Adjust padding for small devices
+      }
+
+      p {
+        font-size: 0.7rem; // Further reduce font size for small devices
+      }
+    }
+
+    .new {
+      top: 0.5rem; // Adjust badge position for small devices
+      right: 0.5rem;
+      font-size: 0.7rem; // Adjust font size for small devices
+    }
+
+    .overlay {
+      height: 20%; // Further reduce overlay height for small devices
+    }
   }
 }

@@ -1,0 +1,154 @@
+.menu-container {
+  color: #ffffff;
+  max-height: 100vh;
+}
+
+.menu-overlay-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.menu-open p {
+  color: #000000;
+  cursor: pointer;
+}
+
+.menu-close p {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 2em;
+  background: #101408;
+  z-index: 2;
+  display: flex;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+
+.menu-close-icon {
+  flex: 2;
+  display: flex;
+  align-items: flex-end;
+  cursor: pointer;
+
+  p {
+    font-size: 100px;
+    -webkit-text-stroke: 3px #ffffff;
+    line-height: 70%;
+  }
+}
+
+.menu-copy {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 2em;
+}
+
+.menu-preview {
+  flex: 4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.menu-link-item {
+  width: max-content;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+  &-holder {
+    position: relative;
+
+    a {
+      color: #ffffff;
+      font-size: 80px;
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 85%;
+    }
+  }
+}
+
+.menu-info {
+  display: flex;
+
+  &-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-close-icon {
+    display: none;
+  }
+
+  .menu-copy {
+    padding-top: 8em;
+  }
+
+  .menu-link-item-holder a {
+    font-size: 60px;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-overlay-bar {
+    padding: 1.5em;
+  }
+
+  .menu-copy {
+    padding-top: 6em;
+  }
+
+  .menu-link-item-holder a {
+    font-size: 50px;
+  }
+
+  .menu-close-icon p {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .menu-overlay-bar {
+    padding: 1em;
+  }
+
+  .menu-copy {
+    padding-top: 4em;
+  }
+
+  .menu-link-item-holder a {
+    font-size: 40px;
+  }
+
+  .menu-close-icon p {
+    font-size: 60px;
+  }
+
+  .menu-info {
+    flex-direction: column;
+  }
+
+  .menu-info-col {
+    align-items: flex-start;
+  }
+}

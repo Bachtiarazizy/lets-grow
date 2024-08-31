@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import SectionLayout from "./Components/SectionLayout";
+import SectionLayout from "./Components/SectionLayout/SectionLayout";
 import Card from "./Components/Card/Card";
 import { cards } from "./utils/cards";
-import { cardss } from "./utils/cardss";
 import HorizontalWrapper from "./Components/HorizontalWrapper";
 import { motion, useScroll, useTransform } from "framer-motion";
 import TextSection from "./TextSection";
@@ -29,7 +28,7 @@ export default function Home() {
       <MainStyled>
         <ShuffleHero />
         <SectionLayout>
-          <HorizontalWrapper height="30rem" direction={-1400}>
+          <HorizontalWrapper height="40rem" direction={-1400}>
             <h2 className="title">Apa yang akan ada di Let&apos;s Grow</h2>
             <div className="cards">
               {cards.map((card, index) => {
@@ -44,16 +43,6 @@ export default function Home() {
         <Countdown />
 
         {/* <Fullpage /> */}
-
-        <SectionLayout>
-          <HorizontalWrapper height="40rem" direction={1400}>
-            <div className="cards" style={{ right: 0 }}>
-              {cardss.map((card, index) => {
-                return <Card key={index} title={card.title} description={card.description} image={card.image} />;
-              })}
-            </div>
-          </HorizontalWrapper>
-        </SectionLayout>
 
         <SectionLayout>
           <TextSection />
@@ -95,8 +84,8 @@ const MainStyled = styled.main`
   .cards {
     position: absolute;
     display: grid;
-    grid-template-columns: repeat(5, 30rem);
-    gap: 4rem;
+    grid-template-columns: repeat(4, 30rem);
+    gap: 2rem;
   }
 
   .video {

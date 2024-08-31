@@ -1,0 +1,21 @@
+// SectionLayout.module.scss
+
+.section {
+  padding: 5rem;
+  height: 100vh;
+  box-sizing: border-box; // Ensure padding doesn't affect the height
+
+  // Responsive Styles
+  @media (max-width: 1024px) {
+    padding: 4rem; // Adjust padding for tablets and smaller devices
+  }
+
+  @media (max-width: 768px) {
+    padding: 3rem; // Adjust padding for mobile devices
+    height: auto; // Allow height to adjust based on content for small screens
+  }
+
+  @media (max-width: 480px) {
+    padding: 2rem; // Further adjust padding for very small devices
+  }
+}

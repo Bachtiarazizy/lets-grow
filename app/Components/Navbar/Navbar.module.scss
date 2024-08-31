@@ -12,20 +12,23 @@ $color-border: #ba8c8c;
   z-index: 100;
   width: 100%;
   top: 0;
+}
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-    li {
-      transition: all 0.2s ease-in-out;
-      color: black;
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .nav {
+    padding: 1.2rem 2rem; /* Adjust padding for tablets */
+  }
+}
 
-      &:hover {
-        color: rgb(204, 255, 0);
-        transform: scale(1.1);
-      }
-    }
+@media (max-width: 768px) {
+  .nav {
+    padding: 1rem 1.5rem; /* Adjust padding for small tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.8rem 1rem; /* Adjust padding for mobile devices */
   }
 }
