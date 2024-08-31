@@ -1,0 +1,88 @@
+// Horizontal.module.scss
+
+.horizontal-scroll-container {
+  background-color: #262626; // neutral-800
+  margin-bottom: 4rem;
+}
+
+.scroll-indicator {
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #737373; // neutral-500
+  }
+}
+
+.horizontal-scroll-section {
+  position: relative;
+  height: 300vh;
+  background-color: #171717; // neutral-900
+}
+
+.sticky-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  position: relative;
+  height: 450px;
+  width: 450px;
+  overflow: hidden;
+  background-color: #e5e5e5; // neutral-200
+
+  &__background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+  }
+
+  &:hover {
+    .card__background {
+      transform: scale(1.1);
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: 1rem; // Adjust text positioning to match the new card height
+    left: 1rem; // Adjust text positioning to match the new card height
+    z-index: 5;
+    transition: color 0.3s ease-in-out;
+
+    h3 {
+      display: inline-block;
+      font-size: 1.2rem; // Adjust font size if needed
+      color: #f2994a;
+      background: black;
+      padding: 0.2rem 0.8rem; // Adjust padding if needed
+      border-radius: 30px;
+      margin-bottom: 0.5rem;
+      border: 1px solid black;
+    }
+
+    p {
+      color: #000000;
+      margin: 0;
+      font-size: 0.9rem; // Adjust font size if needed
+    }
+  }
+}

@@ -2,15 +2,13 @@
 import React from "react";
 import styled from "styled-components";
 import SectionLayout from "./Components/SectionLayout/SectionLayout";
-import Card from "./Components/Card/Card";
-import { cards } from "./utils/cards";
-import HorizontalWrapper from "./Components/HorizontalWrapper";
 import { motion, useScroll, useTransform } from "framer-motion";
-import TextSection from "./TextSection";
+import TextSection from "./Components/TextSection/TextSection";
 import ShuffleHero from "./Components/Hero/Hero";
 import { TextParallax } from "./Components/Text-parallax/TextParallax";
 import Fullpage from "./Components/Fullpage/Fullpage";
 import Countdown from "./Components/CountDown/CountDown";
+import Horizontal from "./Components/HorizontalScroll/HoeizontalScroll";
 
 export default function Home() {
   const video = React.useRef<HTMLDivElement>(null);
@@ -27,16 +25,7 @@ export default function Home() {
     <>
       <MainStyled>
         <ShuffleHero />
-        <SectionLayout>
-          <HorizontalWrapper height="40rem" direction={-1400}>
-            <h2 className="title">Apa yang akan ada di Let&apos;s Grow</h2>
-            <div className="cards">
-              {cards.map((card, index) => {
-                return <Card key={index} title={card.title} description={card.description} image={card.image} />;
-              })}
-            </div>
-          </HorizontalWrapper>
-        </SectionLayout>
+        <Horizontal />
 
         <TextParallax />
         <h2 className="title">CountDown</h2>
@@ -81,21 +70,41 @@ const MainStyled = styled.main`
     text-align: center;
     margin-bottom: 4rem;
   }
-  .cards {
-    position: absolute;
-    display: grid;
-    grid-template-columns: repeat(4, 30rem);
-    gap: 2rem;
-  }
 
   .video {
     padding: 2rem;
     background-color: #161616;
     border-radius: 1rem;
+
     iframe {
       border: none;
       width: 100%;
       height: 52rem;
+    }
+
+    // Responsive Styles
+    @media (max-width: 1200px) {
+      padding: 1.5rem;
+
+      iframe {
+        height: 40rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 1rem;
+
+      iframe {
+        height: 30rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      padding: 0.5rem;
+
+      iframe {
+        height: 20rem;
+      }
     }
   }
 `;

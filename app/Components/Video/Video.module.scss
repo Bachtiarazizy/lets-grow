@@ -1,0 +1,62 @@
+// TextSection.module.scss
+
+.video {
+  padding: 2rem;
+  background-color: #161616;
+  border-radius: 1rem;
+  iframe {
+    border: none;
+    width: 100%;
+    height: 52rem;
+  }
+}
+
+.textSection {
+  p {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    text-align: center;
+  }
+}
+
+// Media queries for responsive design
+@media (min-width: 640px) {
+  .textSection {
+    p {
+      font-size: 3rem;
+      gap: 2rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .textSection {
+    p {
+      font-size: 4rem;
+      gap: 2.5rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .textSection {
+    p {
+      font-size: 5rem;
+      gap: 3rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .textSection {
+    p {
+      font-size: 6rem;
+      gap: 3.5rem;
+    }
+  }
+}

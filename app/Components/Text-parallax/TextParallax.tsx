@@ -103,9 +103,8 @@ const Content = () => (
     <h2>Let&apos;s Grow</h2>
     <div className="content">
       <p>
-        Mewadahi secara menyeluruh dan menjalin koneksi yang kuat antara UMKM pelajar dengan lembaga atau perusahaan bisnis di Turki dan Indonesia, menciptakan peluang untuk kolaborasi, mentorship, dan pengembangan. Inisiatif ini bertujuan
-        untuk menjembatani kesenjangan antara pelajar wirausaha yang beraspirasi dan bisnis yang sudah mapan, mendorong kemitraan yang dapat menghasilkan manfaat bersama, berbagi pengetahuan, serta memperluas jangkauan pasar bagi usaha yang
-        dipimpin oleh pelajar ini.
+        Comprehensively accommodating and establishing strong connections between student SMEs and business institutions or companies in Turkey and Indonesia, creating opportunities for collaboration, mentorship, and development. This
+        initiative aims to bridge the gap between aspiring student entrepreneurs and established businesses, encouraging partnerships that can produce mutual benefits, share knowledge, and expand market reach for student-led ventures.
       </p>
       <button>
         Learn more <FiArrowUpRight className="inline" />
@@ -118,9 +117,8 @@ const Content2 = () => (
     <h2>Let&apos;s Grow</h2>
     <div className="content">
       <p>
-        Memfasilitasi seluruh kebutuhan mahasiswa yang menjalankan usaha di Turki dengan memberikan dukungan yang komprehensif, mulai dari akses terhadap sumber daya, pelatihan, hingga pendampingan yang diperlukan untuk mengembangkan bisnis
-        mereka. Inisiatif ini berupaya memastikan bahwa setiap aspek yang dibutuhkan oleh pelajar dalam menjalankan usahanya, baik dari segi operasional, legalitas, maupun pemasaran, dapat terpenuhi dengan baik sehingga mereka dapat fokus
-        pada pertumbuhan dan inovasi bisnis mereka di lingkungan yang kompetitif.
+        Facilitating all the needs of students running businesses in Turkey by providing comprehensive support, including access to resources, training, and necessary mentoring to develop their businesses. This initiative aims to ensure
+        that every aspect required by students in running their businesses, whether operational, legal, or marketing-related, is adequately met, allowing them to focus on growth and innovation in a competitive environment.
       </p>
       <button>
         Learn more <FiArrowUpRight className="inline" />
@@ -133,9 +131,9 @@ const Content3 = () => (
     <h2>Let&apos;s Grow</h2>
     <div className="content">
       <p>
-        Memusatkan upaya untuk mendukung dan mempercepat ekspansi UMKM pelajar Indonesia di Turki menuju pasar internasional, dengan memberikan akses ke jaringan global, pengetahuan tentang dinamika pasar internasional, serta peluang
-        kerjasama dengan mitra bisnis di berbagai negara. Inisiatif ini bertujuan untuk memberdayakan pelajar wirausaha agar dapat membawa produk dan jasa mereka ke level global, meningkatkan daya saing, dan membuka pintu untuk pertumbuhan
-        yang lebih besar di luar batas-batas nasional.
+        Focusing efforts on supporting and accelerating the expansion of Indonesian student SMEs in Turkey towards international markets by providing access to a global network, knowledge about international market dynamics, and
+        opportunities for collaboration with business partners in various countries. This initiative aims to empower student entrepreneurs to bring their products and services to a global level, enhance competitiveness, and open doors for
+        greater growth beyond national borders.
       </p>
       <button>
         Learn more <FiArrowUpRight className="inline" />

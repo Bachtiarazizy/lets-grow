@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import styled from "styled-components";
 import { motion, useScroll, useTransform } from "framer-motion";
+import styles from "./TextSection.module.scss";
 
 interface Props {
   children: React.ReactNode;
@@ -29,23 +29,13 @@ const TextWrapper = ({ children }: Props) => {
 
 function TextSection() {
   return (
-    <TextSectionStyled>
+    <section className={styles.textSection}>
       <TextWrapper>Let&apos;s Grow, Let it Glow</TextWrapper>
       <TextWrapper>Let&apos;s Grow, Let it Glow</TextWrapper>
       <TextWrapper>Let&apos;s Grow, Let it Glow</TextWrapper>
       <TextWrapper>Let&apos;s Grow, Let it Glow</TextWrapper>
-    </TextSectionStyled>
+    </section>
   );
 }
-
-const TextSectionStyled = styled.section`
-  p {
-    font-size: 5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-`;
 
 export default TextSection;

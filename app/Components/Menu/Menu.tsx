@@ -13,7 +13,6 @@ interface MenuLink {
 
 const menuLinks: MenuLink[] = [
   { path: "/", label: "Home" },
-  { path: "/work", label: "Work" },
   { path: "/about", label: "About" },
   { path: "/contact", label: "Contact" },
   { path: "/lab", label: "Lab" },
