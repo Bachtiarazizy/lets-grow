@@ -10,9 +10,24 @@ type CardType = {
 };
 
 const cards: CardType[] = [
-  { url: "https://plus.unsplash.com/premium_photo-1683134650708-d84ff30080c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXdhcmRzfGVufDB8fDB8fHww", title: "Title 1", id: 1, desc: "desc" },
-  { url: "https://images.unsplash.com/photo-1576085898323-218337e3e43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVkJTIwdGFsa3xlbnwwfHwwfHx8MA%3D%3D", title: "Title 2", id: 2, desc: "desc" },
-  { url: "https://plus.unsplash.com/premium_photo-1661274209157-118069b926f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGlzY3Vzc2lvbnxlbnwwfHwwfHx8MA%3D%3D", title: "Title 3", id: 3, desc: "desc" },
+  {
+    url: "https://plus.unsplash.com/premium_photo-1683134650708-d84ff30080c3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YXdhcmRzfGVufDB8fDB8fHww",
+    title: "Bussines Plan Competition",
+    id: 1,
+    desc: "Kompetisi Rencana Bisnis pada bulan Oktober sebagai Pre-Event Let’s Grow",
+  },
+  {
+    url: "https://images.unsplash.com/photo-1576085898323-218337e3e43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVkJTIwdGFsa3xlbnwwfHwwfHx8MA%3D%3D",
+    title: "Business Talk Show",
+    id: 2,
+    desc: "Sesi diskusi inspiratif dengan para ahli bisnis.",
+  },
+  {
+    url: "https://plus.unsplash.com/premium_photo-1661274209157-118069b926f3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGlzY3Vzc2lvbnxlbnwwfHwwfHx8MA%3D%3D",
+    title: "Bussines Discussion Session",
+    id: 3,
+    desc: "Forum untuk berbagi ide dan strategi dalam mengembangkan usaha.",
+  },
 ];
 
 const Card: React.FC<{ card: CardType }> = ({ card }) => (

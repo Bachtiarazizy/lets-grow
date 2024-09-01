@@ -14,7 +14,7 @@ interface MenuLink {
 const menuLinks: MenuLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  { path: "/contact", label: "Contact" },
+  // { path: "/contact", label: "Contact" },
 ];
 
 const Menu: React.FC = () => {
@@ -50,11 +50,9 @@ const Menu: React.FC = () => {
         <p>Menu</p>
       </div>
 
-      {/* menu-overlay */}
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div className={styles["menu-overlay"]} initial="closed" animate="open" exit="closed" variants={menuVariants}>
-            {/* menu-overlay-bar */}
             <div className={styles["menu-overlay-bar"]}>
               <div className={styles["menu-logo"]}>
                 <Link href="/">Let&apos;s Grow</Link>
@@ -64,7 +62,6 @@ const Menu: React.FC = () => {
               </div>
             </div>
 
-            {/* menu overlay items */}
             <div className={styles["menu-close-icon"]} onClick={toggleMenu}>
               <p>&#x2715;</p>
             </div>
@@ -73,18 +70,19 @@ const Menu: React.FC = () => {
                 {menuLinks.map((link, index) => (
                   <motion.div key={index} className={styles["menu-link-item"]} custom={index} variants={linkVariants}>
                     <div className={styles["menu-link-item-holder"]} onClick={toggleMenu}>
-                      <Link className={styles["menu-link"]} href={link.path}>
-                        {link.label}
-                      </Link>
+                      <FlipLink href={link.path}>{link.label}</FlipLink>
                     </div>
                   </motion.div>
                 ))}
               </div>
               <motion.div className={styles["menu-info"]} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5, duration: 0.5 }}>
                 <div className={styles["menu-info-col"]}>
-                  <a href="#">X &#8599;</a>
-                  <a href="#">Instagram &#8599;</a>
-                  <a href="#">LinkedIn &#8599;</a>
+                  <a href="https://www.instagram.com/libi.ppit" target="_blank" rel="noopener noreferrer">
+                    Instagram &#8599;
+                  </a>
+                  <a href="https://www.instagram.com/libi.ppit" target="_blank" rel="noopener noreferrer">
+                    LinkedIn &#8599;
+                  </a>
                 </div>
                 <div className={styles["menu-info-col"]}>
                   <p>sepetimiz.bk@gmail.com</p>
@@ -99,6 +97,52 @@ const Menu: React.FC = () => {
         )}
       </AnimatePresence>
     </div>
+  );
+};
+
+const DURATION = 0.25;
+const STAGGER = 0.025;
+
+const FlipLink = ({ children, href }: { children: string; href: string }) => {
+  return (
+    <motion.a initial="initial" whileHover="hovered" href={href} className={styles["flip-link"]}>
+      <div className={styles["original"]}>
+        {children.split("").map((l, i) => (
+          <motion.span
+            key={i}
+            variants={{
+              initial: { y: 0 },
+              hovered: { y: "-100%" },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+      <div className={styles["flipped"]}>
+        {children.split("").map((l, i) => (
+          <motion.span
+            key={i}
+            variants={{
+              initial: { y: "100%" },
+              hovered: { y: 0 },
+            }}
+            transition={{
+              duration: DURATION,
+              ease: "easeInOut",
+              delay: STAGGER * i,
+            }}
+          >
+            {l}
+          </motion.span>
+        ))}
+      </div>
+    </motion.a>
   );
 };
 

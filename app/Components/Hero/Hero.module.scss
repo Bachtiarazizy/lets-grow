@@ -19,10 +19,10 @@
 }
 
 .text {
-  font-size: 1rem; /* Base font size for mobile devices */
+  font-size: 0.5rem; /* Base font size for mobile devices */
 
   @media (min-width: 640px) {
-    font-size: 1.125rem; /* Adjust for small screens */
+    font-size: 1rem; /* Adjust for small screens */
   }
 
   @media (min-width: 768px) {
