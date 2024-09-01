@@ -15,7 +15,6 @@ const menuLinks: MenuLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
   { path: "/contact", label: "Contact" },
-  { path: "/lab", label: "Lab" },
 ];
 
 const Menu: React.FC = () => {
@@ -58,7 +57,7 @@ const Menu: React.FC = () => {
             {/* menu-overlay-bar */}
             <div className={styles["menu-overlay-bar"]}>
               <div className={styles["menu-logo"]}>
-                <Link href="/">Codegrid</Link>
+                <Link href="/">Let&apos;s Grow</Link>
               </div>
               <div className={styles["menu-close"]}>
                 <p onClick={toggleMenu}>Close</p>
@@ -86,17 +85,15 @@ const Menu: React.FC = () => {
                   <a href="#">X &#8599;</a>
                   <a href="#">Instagram &#8599;</a>
                   <a href="#">LinkedIn &#8599;</a>
-                  <a href="#">Behance &#8599;</a>
-                  <a href="#">Dribbble &#8599;</a>
                 </div>
                 <div className={styles["menu-info-col"]}>
-                  <p>info@codegrid.com</p>
-                  <p>0923 3984 23</p>
+                  <p>sepetimiz.bk@gmail.com</p>
+                  <p>05421794383</p>
                 </div>
               </motion.div>
             </div>
             <motion.div className={styles["menu-preview"]} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.7, duration: 0.5 }}>
-              <p>View ShowReel</p>
+              {/* <p>View ShowReel</p> */}
             </motion.div>
           </motion.div>
         )}
