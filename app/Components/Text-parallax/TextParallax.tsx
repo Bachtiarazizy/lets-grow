@@ -113,7 +113,7 @@ const Content = () => (
       <p>
         Comprehensively accommodating and establishing strong connections between student SMEs and business institutions or companies in Turkey and Indonesia, creating opportunities for collaboration, mentorship, and development. This
         initiative aims to bridge the gap between aspiring student entrepreneurs and established businesses, encouraging partnerships that can produce mutual benefits, share knowledge, and expand market reach for student-led ventures. It is
-        hoped that business can develop rapidly through enhancing the three main Characteristics of Business Growth, namely Connected Growth, Complementary Growth and Continues Growth.
+        hoped that business can develop rapidly through enhancing the three main Characteristics of Business Growth, namely Connected Growth, Complementary Growth and Continuous Growth.
       </p>
       <button>
         Learn more <FiArrowUpRight className="inline" />
