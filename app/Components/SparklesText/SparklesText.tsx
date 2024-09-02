@@ -75,7 +75,7 @@ const SparklesText: React.FC<SparklesTextProps> = ({ text, colors = { first: "#9
         } as CSSProperties
       }
     >
-      <span className="relative inline-block">
+      <span className="">
         {sparkles.map((sparkle) => (
           <Sparkle key={sparkle.id} {...sparkle} />
         ))}

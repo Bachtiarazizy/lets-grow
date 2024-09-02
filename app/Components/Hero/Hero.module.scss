@@ -19,22 +19,22 @@
 }
 
 .text {
-  font-size: 0.5rem; /* Base font size for mobile devices */
+  font-size: 3rem; /* Base font size for mobile devices */
 
   @media (min-width: 640px) {
-    font-size: 1rem; /* Adjust for small screens */
+    font-size: 3rem; /* Adjust for small screens */
   }
 
   @media (min-width: 768px) {
-    font-size: 1.25rem; /* Adjust for medium screens */
+    font-size: 3rem; /* Adjust for medium screens */
   }
 
   @media (min-width: 1024px) {
-    font-size: 1.375rem; /* Adjust for large screens */
+    font-size: 3rem; /* Adjust for large screens */
   }
 
   @media (min-width: 1280px) {
-    font-size: 1.875rem; /* Adjust for extra-large screens */
+    font-size: 3rem; /* Adjust for extra-large screens */
   }
 }
 

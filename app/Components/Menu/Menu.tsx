@@ -14,7 +14,7 @@ interface MenuLink {
 const menuLinks: MenuLink[] = [
   { path: "/", label: "Home" },
   { path: "/about", label: "About" },
-  // { path: "/contact", label: "Contact" },
+  { path: "https://sepetimiz.vercel.app", label: "Sepetimiz" },
 ];
 
 const Menu: React.FC = () => {

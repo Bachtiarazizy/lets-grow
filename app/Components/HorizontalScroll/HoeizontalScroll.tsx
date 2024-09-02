@@ -17,7 +17,7 @@ const cards: CardType[] = [
     desc: "Kompetisi Rencana Bisnis pada bulan Oktober sebagai Pre-Event Let’s Grow",
   },
   {
-    url: "https://images.unsplash.com/photo-1576085898323-218337e3e43c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dGVkJTIwdGFsa3xlbnwwfHwwfHx8MA%3D%3D",
+    url: "https://images.unsplash.com/photo-1528605105345-5344ea20e269?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlZCUyMHRhbGt8ZW58MHx8MHx8fDA%3D",
     title: "Business Talk Show",
     id: 2,
     desc: "Sesi diskusi inspiratif dengan para ahli bisnis.",

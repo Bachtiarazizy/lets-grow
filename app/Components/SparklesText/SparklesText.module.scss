@@ -1,7 +1,7 @@
 .sparklesText {
   position: relative;
   display: inline-block;
-  font-size: 2rem; /* Default font size for mobile devices */
+  font-size: 3.5rem; /* Default font size for mobile devices */
   font-weight: bold;
 
   .sparkle {
@@ -11,18 +11,18 @@
   }
 
   @media (min-width: 640px) {
-    font-size: 3rem; /* Adjust for small screens */
+    font-size: 4rem;
   }
 
   @media (min-width: 768px) {
-    font-size: 4rem; /* Adjust for medium screens */
+    font-size: 4rem;
   }
 
   @media (min-width: 1024px) {
-    font-size: 4rem; /* Adjust for large screens */
+    font-size: 5rem;
   }
 
   @media (min-width: 1280px) {
-    font-size: 5rem; /* Adjust for extra-large screens */
+    font-size: 5rem;
   }
 }

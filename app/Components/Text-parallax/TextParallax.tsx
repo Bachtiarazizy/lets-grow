@@ -10,7 +10,7 @@ export const TextParallax = () => {
       <TextParallaxContent
         imgUrl="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2671&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Let's Grow"
-        heading="Accommode and Connect the Community."
+        heading="Accommodate and Connect the Community."
       >
         <Content2 />
       </TextParallaxContent>
@@ -104,7 +104,8 @@ const Content = () => (
     <div className="content">
       <p>
         Comprehensively accommodating and establishing strong connections between student SMEs and business institutions or companies in Turkey and Indonesia, creating opportunities for collaboration, mentorship, and development. This
-        initiative aims to bridge the gap between aspiring student entrepreneurs and established businesses, encouraging partnerships that can produce mutual benefits, share knowledge, and expand market reach for student-led ventures.
+        initiative aims to bridge the gap between aspiring student entrepreneurs and established businesses, encouraging partnerships that can produce mutual benefits, share knowledge, and expand market reach for student-led ventures.it is
+        hoped that business can develop rapidly through enhancing the three main Characteristics of Business Growth, namely Connected Growth, Complementary Growth and Continues Growth.
       </p>
       <button>
         Learn more <FiArrowUpRight className="inline" />
@@ -117,7 +118,7 @@ const Content2 = () => (
     <h2>Let&apos;s Grow</h2>
     <div className="content">
       <p>
-        Facilitating all the needs of students running businesses in Turkey by providing comprehensive support, including access to resources, training, and necessary mentoring to develop their businesses. This initiative aims to ensure
+        Facilitating all the needs of students who run businesses in Turkey by providing comprehensive support, including access to resources, training, and necessary mentoring to develop their businesses. This initiative aims to ensure
         that every aspect required by students in running their businesses, whether operational, legal, or marketing-related, is adequately met, allowing them to focus on growth and innovation in a competitive environment.
       </p>
       <button>
